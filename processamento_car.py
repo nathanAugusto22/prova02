@@ -16,6 +16,7 @@ from sklearn.naive_bayes import GaussianNB
 import matplotlib.pyplot as plt
 import seaborn as sns
 
+#importando dados
 base_car = pd.read_csv('car_data.txt')
 base_car.describe()
 
@@ -98,7 +99,10 @@ sns.set(style="whitegrid", color_codes=True)
 sns.countplot(x = "aceitacao", data = base_car, palette = "Greens_d");
 sns.factorplot(x="aceitacao", y="nlugares", data=base_car, kind="bar");
 
-#codigos
+
+
+
+#codigos de estudo
 
 #prevendo com  naive_bayes
 #classificador = GaussianNB() #criando classificador
